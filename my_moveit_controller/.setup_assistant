@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: three_links
+    relative_path: urdf/three_links.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/three_links.srdf
+  CONFIG:
+    author_name: gyro
+    author_email: gyro@gyro.com.tw
+    generated_timestamp: 1653374412

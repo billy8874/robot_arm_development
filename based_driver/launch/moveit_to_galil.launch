@@ -1,0 +1,7 @@
+<launch>
+  <!--node name="PosCmd_server" pkg="driver_action_server" type="gclib_ros_pos_tracking" output="screen"/-->
+  <node name="PosCmd_server" pkg="based_driver" type="gclib_ros_contour" output="screen"/>
+  <node name="fake_feedback" pkg="based_driver" type="fake_motor_feedback_pub" output="screen"/>
+  <node name="action_for_moveit" pkg="based_driver" type="driver_action_server" output="screen"/>
+  <include file="$(find my_moveit_controller)/launch/demo.launch" />
+</launch>
